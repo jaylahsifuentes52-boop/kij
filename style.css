@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #090b1c;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 75px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #14152d;
+    border-bottom: 1px solid #37345d;
+}
+
+header h2 {
+    font-size: 25px;
+}
+
+header span {
+    color: #ff58c8;
+}
+
+.online {
+    color: #5dffc0;
+    font-size: 13px;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 75px);
+}
+
+aside {
+    width: 220px;
+    background: #111329;
+    padding: 25px 15px;
+}
+
+aside h3 {
+    color: #8589bb;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+aside button {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid #37365c;
+    border-radius: 12px;
+    background: #1b1d3a;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+}
+
+aside button:hover {
+    background: #6549c9;
+}
+
+main {
+    flex: 1;
+    padding: 35px;
+    max-width: 950px;
+    margin: auto;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.welcome h1 {
+    font-size: 36px;
+}
+
+.welcome span {
+    background: linear-gradient(90deg, #8b79ff, #ff58c8, #54e7ed);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.welcome p {
+    color: #a6a9c9;
+}
+
+.page {
+    background: #151832;
+    border: 1px solid #37365c;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+#messages {
+    height: 280px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #0c1023;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.message {
+    padding: 14px;
+    border-radius: 12px;
+    margin: 10px 0;
+    max-width: 85%;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.ai {
+    background: #34305e;
+}
+
+.user {
+    background: #6948c7;
+    margin-left: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    background: #0b0e20;
+    color: white;
+    border: 1px solid #45456d;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+textarea {
+    height: 200px;
+    resize: vertical;
+    font-family: monospace;
+}
+
+button {
+    cursor: pointer;
+}
+
+main button, #chatForm button {
+    background: linear-gradient(90deg, #7058ee, #d34fbe);
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#chatForm {
+    display: flex;
+    gap: 10px;
+}
+
+#chatForm input {
+    flex: 1;
+}
+
+#chatForm button {
+    width: 55px;
+    margin: 10px 0;
+}
+
+#fixedCode {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    background: #090e1d;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.apkbox {
+    background: linear-gradient(120deg, #393078, #722e78);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.note {
+    color: #aaaecb;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+@media(max-width:650px) {
+    .container {
+        display: block;
+    }
+
+    aside {
+        width: 100%;
+        display: flex;
+        gap: 7px;
+        padding: 10px;
+    }
+
+    aside h3 {
+        display: none;
+    }
+
+    aside button {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .welcome h1 {
+        font-size: 27px;
+    }
+}

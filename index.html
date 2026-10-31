@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junior AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>✦ Junior <span>AI</span></h2>
+    <div class="online">● AI Workspace</div>
+</header>
+
+<div class="container">
+
+<aside>
+    <h3>MENU</h3>
+    <button onclick="showPage('chat')">💬 AI Chat</button>
+    <button onclick="showPage('fix')">🛠️ Fix Code</button>
+    <button onclick="showPage('apk')">📱 Build APK</button>
+</aside>
+
+<main>
+    <div class="welcome">
+        <h1>Welcome to <span>Junior AI</span></h1>
+        <p>Your personal AI coding assistant.</p>
+    </div>
+
+    <section id="chat" class="page">
+        <h2>💬 Ask Junior AI</h2>
+        <div id="messages">
+            <div class="message ai">
+                Hey! I'm Junior AI. What can I help you build today?
+            </div>
+        </div>
+        <form id="chatForm">
+            <input id="question" placeholder="Ask me anything..." required>
+            <button type="submit">➤</button>
+        </form>
+    </section>
+
+    <section id="fix" class="page hidden">
+        <h2>🛠️ Fix Code</h2>
+        <p>Paste your broken code below.</p>
+        <textarea id="code" placeholder="Paste your code here..."></textarea>
+        <input id="problem" placeholder="What is wrong with your code?">
+        <button onclick="fixCode()">✨ Fix My Code</button>
+        <pre id="fixedCode"></pre>
+    </section>
+
+    <section id="apk" class="page hidden">
+        <h2>📱 Build APK</h2>
+        <p>Prepare your Android application project.</p>
+        <div class="apkbox">
+            <h3>Junior AI Android</h3>
+            <p>Download the Android starter project and follow its build instructions.</p>
+            <a href="/download/android-starter.zip">
+                <button>⬇ Download Android Starter</button>
+            </a>
+        </div>
+        <p class="note">This is a starter project, not a finished APK. Android Studio is needed to compile it.</p>
+    </section>
+
+</main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
